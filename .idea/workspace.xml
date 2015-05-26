@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e4ccff3-c838-4cd5-b464-942aa4578d6a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\JavaScriptPlayground.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\modules.xml" afterPath="" />
+    <list default="true" id="6e4ccff3-c838-4cd5-b464-942aa4578d6a" name="Default" comment="removed .idea folder">
       <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Administrator\PhpstormProjects\JavaScriptPlayground\.idea\workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="JavaScriptPlayground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +44,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="622">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.024115756" vertical-offset="0" max-vertical-offset="622">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -159,7 +155,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/phpStormWorkspace" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -221,7 +217,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432656601085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed .idea folder">
+      <created>1432656638316</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1432656638316</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -303,8 +305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="622">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.024115756" vertical-offset="0" max-vertical-offset="622">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding />
         </state>
       </provider>
