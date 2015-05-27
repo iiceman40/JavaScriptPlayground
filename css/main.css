@@ -1,44 +1,167 @@
-.braces-wrapper {
-    margin-top: 7%;
-    width: 700px;
-    height: 700px;
-    transform: rotate(0deg);
+body {
+	background: url(../img/wvd_test_bg.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100vh;
 }
+
+/*
+ * VISO
+ */
 .viso {
-    width: 50%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
 }
-.left-side {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+
+
+/*
+ * BRACES
+ */
+
+.braces-wrapper {
+	width: 100vh;
+	height: 100vh;
+	margin: 6% auto;
+	animation: spin 3s;
+	transform-origin: 50% 30%;
+	animation-fill-mode: forwards;
 }
-.right-side {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+
+.braces-wrapper .inner-wrapper {
+	width: 100%;
+	height: 100%;
+	margin-left: -5%;
+}
+
+@keyframes spin { 100% { transform:rotate(-45deg); } }
+
+.brace-left,
+.brace-right {
+	width: 50%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.brace-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.brace-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 .inner-wrapper {
-    position: relative;
+	position: relative;
 }
 
 .brace {
-    position: absolute;
-    font-size: 75vh;
-    top: -0.3em;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: -15%;
 }
 
-.left-side .brace {
-    text-align: left;
-    right: -25%;
+.brace-left .brace {
+	right: -15%;
+	background: url(../img/brace-left.png) center right no-repeat;
+	animation-name: moveLeft;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
 }
-.right-side .brace {
-    text-align: right;
-    left: -25%;
+
+@keyframes moveLeft {
+	from {right: -15%;}
+	to {right: 65%;}
+}
+
+.brace-right .brace {
+	left: -15%;
+	background: url(../img/brace-right.png) center left no-repeat;
+	animation-name: moveRight;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+	from {left: -15%;}
+	to {left: 65%;}
+}
+
+
+/*
+ * FACE
+ */
+
+.face {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	animation-name: fadeInAndZoom;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes fadeInAndZoom {
+	0% {opacity: 0; transform:scale(0);}
+	70% {opacity: 0.6; transform:scale(0.7);}
+	85% {opacity: 0.7; transform:scale(0.8);}
+	90% {opacity: 0.8; transform:scale(0.5);}
+	95% {opacity: 0.9; transform:scale(0.75);}
+	100% {opacity: 1; transform:scale(1);}
+}
+
+.face .face-part {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.face-left {
+	background: url(../img/viso-face-left.png) right center no-repeat;
+	background-size: auto 70%;
+}
+.face-right {
+	background: url(../img/viso-face-right.png) left center no-repeat;
+	background-size: auto 70%;
+}
+
+
+/*
+ * ICONS
+ */
+
+.icon-container {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.icon {
+	background: orange;
+	width: 2em;
+	height: 2em;
+	position: absolute;
+	color: white;
+	padding: 0.3em 0;
+	font-size: 1.5em;
+	text-align: center;
 }
