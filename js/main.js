@@ -28,6 +28,14 @@ $(document).ready(function () {
 			'</div>'
 		);
 
+        el.delay(Math.random() * 1500 + 2000).animate({
+            opacity: 1,
+            width: '2em',
+            height: '2em',
+            'left': '-=0.5em',
+            'top': '-=0.5em'
+        }, 500, 'easeOutElastic');
+
 		$('.icon-container').append(el);
 		var offset = el.offset();
 		el.data('originalPos', {x: offset.left, y: offset.top});
