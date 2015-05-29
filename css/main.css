@@ -75,7 +75,7 @@ body {
 }
 
 .brace-left .brace {
-	right: -15%;
+	right: -23%;
 	background: url(../img/brace-left.png) center right no-repeat;
 	animation-name: moveLeft;
 	animation-duration: 3s;
@@ -83,12 +83,12 @@ body {
 }
 
 @keyframes moveLeft {
-	from {right: -15%;}
+	from {right: -23%;}
 	to {right: 65%;}
 }
 
 .brace-right .brace {
-	left: -15%;
+	left: -13%;
 	background: url(../img/brace-right.png) center left no-repeat;
 	animation-name: moveRight;
 	animation-duration: 3s;
@@ -96,7 +96,7 @@ body {
 }
 
 @keyframes moveRight {
-	from {left: -15%;}
+	from {left: -13%;}
 	to {left: 65%;}
 }
 
@@ -112,7 +112,7 @@ body {
 	top: 0;
 	opacity: 0;
 	animation-name: fadeInAndZoom;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 }
@@ -129,16 +129,20 @@ body {
 .face .face-part {
 	width: 50%;
 	height: 100%;
-	float: left;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 }
 
 .face-left {
 	background: url(../img/viso-face-left.png) right center no-repeat;
 	background-size: auto 70%;
+	left: 0;
 }
 .face-right {
 	background: url(../img/viso-face-right.png) left center no-repeat;
 	background-size: auto 70%;
+	right: 0;
 }
 
 
@@ -146,12 +150,20 @@ body {
  * ICONS
  */
 
-.icon-container {
+.icon-container-left {
+	bottom: 0;
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.icon-container-right {
 	bottom: 0;
 	height: 100%;
 	left: 0;
 	position: absolute;
-	right: 0;
+	width: 50%;
 	top: 0;
 }
 
