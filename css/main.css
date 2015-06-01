@@ -150,31 +150,155 @@ body {
  * ICONS
  */
 
-.icon-container-left {
+.icon-container.left {
+	/*
+	background: url(../img/wvd_face_bg_final_left.jpg) 0 46%;
+	opacity: 0.7;
+	*/
 	bottom: 0;
 	height: 100%;
-	width: 50%;
+	width: 50vh;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-.icon-container-right {
+.icon-container.right {
+	/*
+	background: url(../img/wvd_face_bg_final_right.jpg) 0 46%;
+	opacity: 0.7;
+	*/
 	bottom: 0;
 	height: 100%;
 	left: 0;
 	position: absolute;
-	width: 50%;
+	width: 50vh;
 	top: 0;
+}
+.icon-container .inner-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .icon {
-	background: orange;
+	background-repeat: no-repeat;
 	width: 1em;
 	height: 1em;
 	position: absolute;
-	color: white;
 	padding: 0.3em 0;
 	font-size: 1.5em;
 	text-align: center;
     opacity: 0;
+}
+
+
+.envelope{
+	background-image: url(../img/icons/envelope.jpg);
+	left: 48%;
+	top: 49%;
+}
+.glasses{
+	background-image: url(../img/icons/glasses.png);
+	left: 24%;
+	top: 52%;
+}
+.globe{
+	background-image: url(../img/icons/globe.jpg);
+	top: 44%;
+	left: 27%;
+}
+.hand{
+	background-image: url(../img/icons/hand.jpg);
+	left: 83%;
+	top: 48%;
+}
+.head{
+	background-image: url(../img/icons/head.jpg);
+	left: 47%;
+	top: 48%;
+}
+.lightbulb{
+	background-image: url(../img/icons/lightbulb.jpg);
+	left: 44%;
+	top: 48%;
+}
+.person{
+	background-image: url(../img/icons/person.jpg);
+	left: 56%;
+	top: 46%;
+}
+.questionmark{
+	background-image: url(../img/icons/questionmark.jpg);
+	top: 48%;
+	left: 9%;
+}
+.questionmark2{
+	background-image: url(../img/icons/questionmark2.jpg);
+	left: 58%;
+	top: 48%;
+}
+.speechbubble{
+	background-image: url(../img/icons/speechbubble.jpg);
+	left: 69%;
+	top: 46%;
+}
+.thumbup{
+	background-image: url(../img/icons/thumbup.jpg);
+	left: 50%;
+	top: 46%;
+}
+.tornado{
+	background-image: url(../img/icons/tornado.png);
+	left: 43%;
+	top: 51%;
+}
+.wie{
+	background-image: url(../img/icons/wie.jpg);
+	left: 37%;
+	top: 47%;
+}
+.wo{
+	background-image: url(../img/icons/wo.jpg);
+	left: 62%;
+	top: 47%;
+}
+.alarm{
+	background-image: url(../img/icons/alarm.jpg);
+	left: 24%;
+	top: 48%;
+}
+.arrow{
+	background-image: url(../img/icons/arrow.png);
+	left: 37%;
+	top: 50%;
+}
+.arrow2{
+	background-image: url(../img/icons/arrow2.png);
+	left: 55%;
+	top: 47%;
+}
+.ball{
+	background-image: url(../img/icons/ball.jpg);
+	left: 53.5%;
+	top: 49%;
+}
+.ball2{
+	background-image: url(../img/icons/ball2.png);
+	left: 57%;
+	top: 46.5%;
+}
+.brush{
+	background-image: url(../img/icons/brush.png);
+	left: 31%;
+	top: 50%;
+}
+.cog{
+	background-image: url(../img/icons/cog.jpg);
+	left: 54%;
+	top: 51%;
+}
+.diagramm{
+	background-image: url(../img/icons/diagramm.png);
+	left: 40%;
+	top: 49%;
 }
