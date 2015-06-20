@@ -4,11 +4,7 @@ $(document).ready(function () {
 		.attr('data-300', 'color:rgb(246, 105, 51)')
 		.attr('data-100p', 'color:rgb(80, 100, 180)');
 
-	var s = skrollr.init({
-		forceHeight: false,
-		smoothScrolling: true,
-		smoothScrollingDuration: 200
-	});
+	var s = skrollr.init();
 
 	$('.menu a').click(function(e){
 		e.preventDefault();
