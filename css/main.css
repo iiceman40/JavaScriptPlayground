@@ -1,304 +1,200 @@
 body {
-	background: url(../img/wvd_test_bg.jpg) center center no-repeat;
-	background-size: cover;
-	height: 100vh;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2em;
 }
 
-/*
- * VISO
- */
-.viso {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow: hidden;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Russo One', sans-serif;
+	font-style: italic;
+	letter-spacing: -3px;
+	text-shadow: -1px -1px 0 #000, 1px 1px 0 #ebebeb;
+	color: #F66933;
 }
 
-
-/*
- * BRACES
- */
-
-.braces-wrapper {
-	width: 100vh;
-	height: 100vh;
-	margin: 6% auto;
-	animation: spin 3s;
-	transform-origin: 50% 30%;
-	animation-fill-mode: forwards;
+h1 {
+	font-size: 5em;
+	letter-spacing: -3px;
 }
 
-.braces-wrapper .inner-wrapper {
-	width: 100%;
-	height: 100%;
-	margin-left: -5%;
+h2 {
+	font-size: 3em;
+	letter-spacing: -2px;
+	border-bottom: 2px solid #666;
+	box-shadow: inset 0 -1px 0 #333, 0 1px 0 #4e4e4e;
 }
 
-@keyframes spin { 100% { transform:rotate(-45deg); } }
+h3 {
+	font-size: 2em;
+	letter-spacing: -1px;
+	margin-top: 0.1em;
+}
 
-.brace-left,
-.brace-right {
-	width: 50%;
-	height: 100%;
-	float: left;
-	overflow: hidden;
+.vanilla-sky {
+	background: #ffbc93;
+	box-shadow: inset 0 100px 100px #b8d6d8;
+	height: 13em;
 	position: relative;
 }
-
-.brace-left {
+.sun {
+	background: #ff4400;
+	width: 20vw;
+	height: 20vw;
+	border-radius: 50%;
 	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-}
-
-.brace-right {
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-
-.inner-wrapper {
-	position: relative;
-}
-
-.brace {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: -15%;
-}
-
-.brace-left .brace {
-	right: -23%;
-	background: url(../img/brace-left.png) center right no-repeat;
-	animation-name: moveLeft;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes moveLeft {
-	from {right: -23%;}
-	to {right: 65%;}
-}
-
-.brace-right .brace {
-	left: -13%;
-	background: url(../img/brace-right.png) center left no-repeat;
-	animation-name: moveRight;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes moveRight {
-	from {left: -13%;}
-	to {left: 65%;}
-}
-
-
-/*
- * FACE
- */
-
-.face {
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	opacity: 0;
-	animation-name: fadeInAndZoom;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
-}
-
-@keyframes fadeInAndZoom {
-	0% {opacity: 0; transform:scale(0);}
-	70% {opacity: 0.6; transform:scale(0.7);}
-	85% {opacity: 0.7; transform:scale(0.8);}
-	90% {opacity: 0.8; transform:scale(0.5);}
-	95% {opacity: 0.9; transform:scale(0.75);}
-	100% {opacity: 1; transform:scale(1);}
-}
-
-.face .face-part {
-	width: 50%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-}
-
-.face-left {
-	background: url(../img/viso-face-left.png) right center no-repeat;
-	background-size: auto 70%;
-	left: 0;
-}
-.face-right {
-	background: url(../img/viso-face-right.png) left center no-repeat;
-	background-size: auto 70%;
-	right: 0;
-}
-
-
-/*
- * ICONS
- */
-
-.icon-container.left {
-	/*
-	background: url(../img/wvd_face_bg_final_left.jpg) 0 46%;
+	top: 20%;
+	left: -1%;
 	opacity: 0.7;
-	*/
-	bottom: 0;
-	height: 100%;
-	width: 50vh;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.icon-container.right {
-	/*
-	background: url(../img/wvd_face_bg_final_right.jpg) 0 46%;
-	opacity: 0.7;
-	*/
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	width: 50vh;
-	top: 0;
-}
-.icon-container .inner-wrapper {
-	position: relative;
-	width: 100%;
-	height: 100%;
+	box-shadow: 0 -30px 200px #ff6633;
 }
 
-.icon {
-	background-repeat: no-repeat;
-	width: 1em;
-	height: 1em;
+@keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position: 500% 0;}
+}
+
+.clouds1 {
 	position: absolute;
-	padding: 0.3em 0;
-	font-size: 1.5em;
+	width: 100%;
+	height: 100%;
+	background: url('../img/clouds_no_border.svg');
+	background-size: 25%;
+	opacity: 0.7;
+	animation: bgscroll 500s infinite linear;
+}
+.clouds2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('../img/clouds_no_border.svg');
+	background-size: 50%;
+	opacity: 0.5;
+	animation: bgscroll 120s infinite linear;
+}
+
+.skyline {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('../img/skyline_gray.svg') no-repeat center bottom;
+	background-size: 100%;
+}
+
+.main-container {
+	background: #555;
+	color: #ebebeb;
+	text-shadow: 1px 1px 0 #333;
+	z-index: 1;
+	position: relative;
+}
+.content-wrapper{
+	margin: 0 3%;
+}
+
+.well {
+	background: #efefef;
+	box-shadow: -1px -1px 1px #333, 1px 1px 1px #ebebeb;
+	color: #666;
+	text-shadow: 0 1px #fff;
+}
+
+.well h3 {
 	text-align: center;
-    opacity: 0;
 }
 
+.menu-wrapper {
+	margin-top: 4vw;
+	perspective: 50vw;
+	height: 50vw;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	width: 20%;
+}
+.menu {
+	display: inline-block;
+	transform-style: preserve-3d;
+	transform: rotateY(-40deg);
+	height: 1000px;
+	background: #FF682D;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 1em;
+	font-size: 1.5em;
+	width: 100%;
+}
 
-.envelope{
-	background-image: url(../img/icons/envelope.jpg);
-	left: 48%;
-	top: 49%;
+.menu li {
+	float: left;
+	box-shadow: -1px -1px 1px #333, 1px 1px 1px #ebebeb;
+	text-shadow: 1px 1px 1px #333;
+	border-radius: 10px 10px;
+	background-color: #768687;
+	width: 45%;
+	height: 10vh;
+	transition: all 0.5s;
+	margin: 0 4px 8px 4px;
 }
-.glasses{
-	background-image: url(../img/icons/glasses.png);
-	left: 24%;
-	top: 52%;
+
+.menu li.enabled {
+	background: #98b3b5;
 }
-.globe{
-	background-image: url(../img/icons/globe.jpg);
-	top: 44%;
-	left: 27%;
+
+.menu li.enabled:hover {
+	background-color: #ffffb5;
+	box-shadow:  -1px -1px 1px #333, 0 0 20px #fff;
 }
-.hand{
-	background-image: url(../img/icons/hand.jpg);
-	left: 83%;
-	top: 48%;
+
+.menu a {
+	color: #ebebeb;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
 }
-.head{
-	background-image: url(../img/icons/head.jpg);
-	left: 47%;
-	top: 48%;
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+	text-decoration: none;
 }
-.lightbulb{
-	background-image: url(../img/icons/lightbulb.jpg);
-	left: 44%;
-	top: 48%;
+
+.menu-back {
+	display: inline-block;
+	position: absolute;
+	top: 0.7vw;
+	right: -13.7vw;
+	transform-style: preserve-3d;
+	transform: rotateY(50deg);
+	background: #333;
+	height: 1000px;
+	width: 100%;
 }
-.person{
-	background-image: url(../img/icons/person.jpg);
-	left: 56%;
-	top: 46%;
+
+.circle-wrapper{
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
 }
-.questionmark{
-	background-image: url(../img/icons/questionmark.jpg);
-	top: 48%;
-	left: 9%;
+.profile-pic {
+	margin: 0 0 15px 0;
+	box-shadow: inset 0 0 200px #333;
 }
-.questionmark2{
-	background-image: url(../img/icons/questionmark2.jpg);
-	left: 58%;
-	top: 48%;
+
+.circle {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	border-radius: 50%;
+	box-shadow: inset 3px 1px 5px #333, 2px 1px 3px #dbdbdb;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-.speechbubble{
-	background-image: url(../img/icons/speechbubble.jpg);
-	left: 69%;
-	top: 46%;
-}
-.thumbup{
-	background-image: url(../img/icons/thumbup.jpg);
-	left: 50%;
-	top: 46%;
-}
-.tornado{
-	background-image: url(../img/icons/tornado.png);
-	left: 43%;
-	top: 51%;
-}
-.wie{
-	background-image: url(../img/icons/wie.jpg);
-	left: 37%;
-	top: 47%;
-}
-.wo{
-	background-image: url(../img/icons/wo.jpg);
-	left: 62%;
-	top: 47%;
-}
-.alarm{
-	background-image: url(../img/icons/alarm.jpg);
-	left: 24%;
-	top: 48%;
-}
-.arrow{
-	background-image: url(../img/icons/arrow.png);
-	left: 37%;
-	top: 50%;
-}
-.arrow2{
-	background-image: url(../img/icons/arrow2.png);
-	left: 55%;
-	top: 47%;
-}
-.ball{
-	background-image: url(../img/icons/ball.jpg);
-	left: 53.5%;
-	top: 49%;
-}
-.ball2{
-	background-image: url(../img/icons/ball2.png);
-	left: 57%;
-	top: 46.5%;
-}
-.brush{
-	background-image: url(../img/icons/brush.png);
-	left: 31%;
-	top: 50%;
-}
-.cog{
-	background-image: url(../img/icons/cog.jpg);
-	left: 54%;
-	top: 51%;
-}
-.diagramm{
-	background-image: url(../img/icons/diagramm.png);
-	left: 40%;
-	top: 49%;
+
+footer {
+	background: #333;
+	color: #efefef;
+	text-shadow: -1px -1px #000, 1px 1px #666;
 }
