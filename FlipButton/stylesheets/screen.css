@@ -1,0 +1,145 @@
+/* line 18, ../sass/screen.scss */
+.flip-navigation {
+  display: inline-block;
+  width: 100%;
+  margin-top: 3px;
+}
+/* line 22, ../sass/screen.scss */
+.flip-navigation .flip-items {
+  display: block;
+}
+/* line 25, ../sass/screen.scss */
+.flip-navigation.open {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 200;
+}
+/* line 35, ../sass/screen.scss */
+.flip-navigation.open .flip-items {
+  display: block;
+  position: absolute;
+  top: 30%;
+  width: 94%;
+  left: 3%;
+}
+/* line 44, ../sass/screen.scss */
+.flip-navigation .flip-container {
+  float: left;
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+/* line 50, ../sass/screen.scss */
+.flip-navigation .flip-container a {
+  display: inline-block;
+  font-family: 'Economica', sans-serif;
+  font-size: 34px;
+  color: #a45400;
+  min-width: 75px;
+  border-bottom: 2px solid #a45400;
+  position: relative;
+  z-index: 100;
+  margin: 35% 20% 0 20%;
+}
+/* line 60, ../sass/screen.scss */
+.flip-navigation .flip-container a:hover {
+  text-decoration: none;
+}
+/* line 65, ../sass/screen.scss */
+.flip-navigation .flip-container .default-state {
+  background: #e37605;
+}
+/* line 68, ../sass/screen.scss */
+.flip-navigation .flip-container .active-state {
+  background: red;
+}
+
+/* Container box to set the sides relative to */
+/* line 77, ../sass/screen.scss */
+.cube .active-state {
+  position: relative;
+}
+/* line 79, ../sass/screen.scss */
+.cube .active-state a {
+  color: #fff;
+  border-color: #fff;
+}
+/* line 83, ../sass/screen.scss */
+.cube .active-state .inner-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 93, ../sass/screen.scss */
+.cube a {
+  color: #a45400;
+}
+/* line 96, ../sass/screen.scss */
+.cube .default-state, .cube .active-state {
+  background: #ee7c00;
+}
+
+/* line 101, ../sass/screen.scss */
+.flip-navigation {
+  /* Container box to set the sides relative to */
+}
+/* line 3, ../sass/_cube.scss */
+.flip-navigation .flip-container {
+  height: 18vw;
+  overflow: visible;
+}
+/* line 6, ../sass/_cube.scss */
+.flip-navigation .flip-container .cube {
+  width: 100%;
+  height: 18vw;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  text-align: center;
+  display: inline-block;
+  /* The two faces of the cube */
+  /* Position the faces */
+}
+/* line 15, ../sass/_cube.scss */
+.flip-navigation .flip-container .cube .default-state, .flip-navigation .flip-container .cube .active-state {
+  height: 18vw;
+}
+/* line 19, ../sass/_cube.scss */
+.flip-navigation .flip-container .cube .default-state {
+  -moz-transform: translateZ(9vw);
+  -ms-transform: translateZ(9vw);
+  -webkit-transform: translateZ(9vw);
+  transform: translateZ(9vw);
+}
+/* line 22, ../sass/_cube.scss */
+.flip-navigation .flip-container .cube .active-state {
+  -moz-transform: rotateX(90deg) translateZ(27vw);
+  -ms-transform: rotateX(90deg) translateZ(27vw);
+  -webkit-transform: rotateX(90deg) translateZ(27vw);
+  transform: rotateX(90deg) translateZ(27vw);
+  display: block !important;
+}
+/* line 28, ../sass/_cube.scss */
+.flip-navigation .flip-container:hover .cube {
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}

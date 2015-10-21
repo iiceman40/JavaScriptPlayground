@@ -1,0 +1,105 @@
+@import "compass/css3";
+
+// CUSTOM MIXIN
+@import "cube";
+
+// COLOR
+$wvdwhite:       #fff;
+
+$wvdgrey:        #5e5e5e;
+$wvdlightergrey: #b3b3b3;
+$wvdlightgrey:   #f4f4f4;
+
+$wvdorange:      #ee7c00;
+$wvddarkorange:  #a45400;
+
+
+
+.flip-navigation {
+	display: inline-block;
+	width: 100%;
+	margin-top: 3px;
+	.flip-items {
+		display: block;
+	}
+	&.open {
+		background-color: rgba(255, 255, 255, .9);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 200;
+
+		.flip-items {
+			display: block;
+			position: absolute;
+			top: 30%;
+			width: 94%;
+			left: 3%;
+		}
+	}
+
+	.flip-container {
+		float: left;
+		width: 20%;
+		height: auto;
+		cursor: pointer;
+
+		a {
+			display: inline-block;
+			font-family: 'Economica', sans-serif;
+			font-size: 34px;
+			color: $wvddarkorange;
+			min-width: 75px;
+			border-bottom: 2px solid $wvddarkorange;
+			position: relative;
+			z-index: 100;
+			margin: 35% 20% 0 20%;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.default-state {
+			background: #e37605;
+		}
+		.active-state {
+			background: red;
+		}
+
+	}
+}
+
+/* Container box to set the sides relative to */
+.cube {
+	.active-state {
+		position: relative;
+		a {
+			color: $wvdwhite;
+			border-color: $wvdwhite;
+		}
+		.inner-wrapper {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.6);
+		}
+	}
+	a {
+		color: $wvddarkorange;
+	}
+	.default-state, .active-state {
+		background: $wvdorange;
+	}
+}
+
+.flip-navigation {
+	$cube-width: 100%;
+	$cube-height: 18vw;
+	@include cubeRotate($cube-width, $cube-height);
+}

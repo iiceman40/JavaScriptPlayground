@@ -1,0 +1,33 @@
+@mixin cubeRotate($cube-width,$cube-height) {
+	/* Container box to set the sides relative to */
+	.flip-container {
+		height: $cube-height;
+		overflow: visible;
+		.cube {
+			width: $cube-width;
+			height: $cube-height;
+			@include transition(all 500ms ease);
+			@include transform(rotateX(0deg));
+			@include transform-style(preserve-3d);
+			text-align: center;
+			display: inline-block;
+			/* The two faces of the cube */
+			.default-state, .active-state {
+				height: $cube-height;
+			}
+			/* Position the faces */
+			.default-state {
+				@include transform(translateZ($cube-height/2));
+			}
+			.active-state {
+				@include transform(rotateX(90deg) translateZ($cube-height*1.5));
+				display: block !important;
+			}
+		}
+		&:hover {
+			.cube {
+				@include transform(rotateX(-90deg));
+			}
+		}
+	}
+}
