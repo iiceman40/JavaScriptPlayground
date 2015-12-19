@@ -1,0 +1,16 @@
+<div ng-controller="ChallengesCtrl">
+
+	<h2>Challenges</h2>
+
+	<div class="row">
+		<div ng-repeat="challenge in challenges" class="col-sm-3">
+			<div ng-click="selectChallenge(challenge);" class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">{{challenge.name}}</h3>
+				</div>
+				<div class="panel-body">{{challenge.description}}</div>
+			</div>
+		</div>
+	</div>
+
+</div>

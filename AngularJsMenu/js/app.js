@@ -9,9 +9,15 @@ app.config(function ($routeProvider) {
 
 app.controller('ArticlesCtrl', function ($scope, $http, Cart) {
 	$scope.cart = Cart;
+	$scope.search = 'test';
+
 	$http.get('data/articles.json').then(function (articlesResponse) {
 		$scope.articles = articlesResponse.data;
 	});
+
+	$scope.test = function(){
+		console.log($scope.search);
+	}
 });
 
 app.controller('CartCtrl', function ($scope, Cart) {

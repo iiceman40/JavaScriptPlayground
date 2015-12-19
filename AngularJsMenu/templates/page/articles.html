@@ -1,34 +1,42 @@
-<form class="form-inline">
-	<label for="search" class="control-label">Suchwort:</label>
-	<input type="text" id="search" class="input-sm form-control" ng-model="search">
-</form>
-<p>
-	Du suchst gerade nach: {{search}}
-</p>
+<div ng-controller="ArticlesCtrl">
+	<form class="form-inline">
+		<label for="search" class="control-label">Suchwort:</label>
+		<input type="text" id="search" class="input-sm form-control" ng-model="search">
+	</form>
+	<p>
+		Du suchst gerade nach: {{search}}
+	</p>
+	<button ng-click="test()">log search test</button>
 
-<h2>Pizzas</h2>
-<table class="table" ng-controller="ArticlesCtrl">
-	<tr ng-repeat="article in articles | filter:search">
-		<td>{{article.id}}</td>
-		<td>{{article.name}}</td>
-		<td><price value="article.price"></price></td>
-		<td><a href class="btn btn-default btn-sm" ng-click="cart.addArticle(article);">Hinzufügen</a></td>
-	</tr>
-</table>
-
-<h2>Warenkorb</h2>
-<div ng-controller="CartCtrl">
-	<div ng-hide="cart.getItems().length" class="alert alert-warning">Ihr Warenkorb ist noch leer.</div>
-	<table ng-show="cart.getItems().length" class="table">
-		<tr ng-repeat="item in cart.getItems() track by $index">
-			<td>{{item.name}}</td>
-			<td><price value="item.price"></price></td>
-			<td><a href class="btn btn-default btn-sm" ng-click="cart.removeArticle($index);">Entfernen</a></td>
-		</tr>
-		<tr>
-			<td>{{cart.getItems().length}} Artikel</td>
-			<td>{{cart.sum() | currency}}</td>
-			<td></td>
+	<h2>Pizzas</h2>
+	<table class="table">
+		<tr ng-repeat="article in articles | filter:search">
+			<td>{{article.id}}</td>
+			<td>{{article.name}}</td>
+			<td>
+				<price value="article.price"></price>
+			</td>
+			<td><a href class="btn btn-default btn-sm" ng-click="cart.addArticle(article);">Hinzufügen</a></td>
 		</tr>
 	</table>
+
+	<h2>Warenkorb</h2>
+
+	<div ng-controller="CartCtrl">
+		<div ng-hide="cart.getItems().length" class="alert alert-warning">Ihr Warenkorb ist noch leer.</div>
+		<table ng-show="cart.getItems().length" class="table">
+			<tr ng-repeat="item in cart.getItems() track by $index">
+				<td>{{item.name}}</td>
+				<td>
+					<price value="item.price"></price>
+				</td>
+				<td><a href class="btn btn-default btn-sm" ng-click="cart.removeArticle($index);">Entfernen</a></td>
+			</tr>
+			<tr>
+				<td>{{cart.getItems().length}} Artikel</td>
+				<td>{{cart.sum() | currency}}</td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
 </div>

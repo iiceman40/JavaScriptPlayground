@@ -1,0 +1,62 @@
+<div ng-controller="ChallengeDetailsCtrl">
+	<h2>Details - {{selectedChallenge.name}}</h2>
+
+	<h3>What's the idea!?</h3>
+	<p>
+		{{selectedChallenge.description}}
+	</p>
+
+	<h3>What to do and when?</h3>
+	<div ng-if="selectedChallenge.hasOwnProperty('plan') && selectedChallenge.plan">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>day</th>
+					<th>exercises</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="(key, task) in selectedChallenge.plan">
+				<tr>
+					<td>{{key}}</td>
+					<td>{{task.description}}</td>
+					<td>
+						<span ng-if="task.status == 0">
+							<a href="" ng-click="task.status = 1">Complete task</a> |
+							<a href="" ng-click="task.status = 2">Skip task</a>
+						</span>
+						<span class="label label-success" ng-if="task.status == 1">Task completed!</span>
+						<span class="label label-warning" ng-if="task.status == 2">Task skipped!</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		Progress:
+		<span class="label label-default">{{currentChallengeProgress.open}}</span>
+		<span class="label label-success">{{currentChallengeProgress.completed}}</span>
+		<span class="label label-warning">{{currentChallengeProgress.skipped}}</span>
+
+		<span ng-if="!currentChallengeProgress.open">Challenge finished!</span>
+
+		<div ng-if="!currentChallengeProgress.open">
+			<br />
+
+			<div class="alert" ng-class="{
+			        'alert-success': getResultPercentage() > 75,
+			        'alert-warning': getResultPercentage() >= 40 && getResultPercentage() < 75,
+			        'alert-danger': getResultPercentage() < 40
+			}">
+				<strong>Result:</strong> {{getResultPercentage()}}%
+			</div>
+		</div>
+	</div>
+
+	<div ng-if="!selectedChallenge.hasOwnProperty('plan') || !selectedChallenge.plan">
+		No challenge plan has been set up for this challenge yet.
+	</div>
+
+	<div>
+		<br/>
+		<button class="btn btn-default btn-sm" ng-click="clearSelectedChallenge()">Back</button>
+	</div>
+</div>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Planking",
+    "description": "Do some planking with exercise time increasing every day.",
+    "plan": {
+      "day 1": {"description": "20 seconds", "status": 0},
+      "day 2": {"description": "20 seconds", "status": 0},
+      "day 3": {"description": "30 seconds", "status": 0},
+      "day 4": {"description": "30 seconds", "status": 0},
+      "day 5": {"description": "40 seconds", "status": 0},
+      "day 6": {"description": "rest", "status": 0}
+    }
+  },
+  {
+    "id": "2",
+    "name": "SitUps",
+    "description": "Do more and more sit ups every day."
+  }
+]
