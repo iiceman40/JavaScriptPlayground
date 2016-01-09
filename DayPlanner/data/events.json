@@ -1,0 +1,555 @@
+[
+  {
+    "title": "Naturwissenschaften",
+    "children": [
+      {
+        "title": "Chemie",
+        "children": [
+          {
+            "id": 1,
+            "time": "10:00",
+            "duration": 1,
+            "room": "N001",
+            "title": "Vortrag: Chemie studieren - warum und wie?",
+            "description": "Die Chemie ist eine zentrale Wissenschaft bei der Entwicklung neuer Technologien. Ob LC-Displays, Batterien oder Kohlefaserbauteile - ohne die Chemie gäbe es nichts von alledem. Auch der zukünftige Arbeitsmarkt wird einen steten Bedarf an gut ausgebildeten Chemikern haben. Es lohnt sich deshalb, Chemie zu studieren. Und warum es sich auch besonders lohnt, Chemie in Chemnitz zu studieren, darüber informieren wir im Vortrag ."
+          },
+          {
+            "id": 2,
+            "time": "13:00",
+            "duration": 1,
+            "room": "N001",
+            "title": "Vortrag: Chemie studieren - warum und wie?",
+            "description": "Die Chemie ist eine zentrale Wissenschaft bei der Entwicklung neuer Technologien. Ob LC-Displays, Batterien oder Kohlefaserbauteile - ohne die Chemie gäbe es nichts von alledem. Auch der zukünftige Arbeitsmarkt wird einen steten Bedarf an gut ausgebildeten Chemikern haben. Es lohnt sich deshalb, Chemie zu studieren. Und warum es sich auch besonders lohnt, Chemie in Chemnitz zu studieren, darüber informieren wir im Vortrag."
+          }
+        ]
+      },
+      {
+        "title": "Physik",
+        "children": [
+          {
+            "id": 3,
+            "time": "10:00",
+            "duration": 1,
+            "room": "N013",
+            "title": "F O R S C H U N G aktuell",
+            "description": "Sensorik und Kognition als interdisziplinäres Studien- und Forschungsgebiet"
+          },
+          {
+            "id": 4,
+            "time": "11:00",
+            "duration": 1,
+            "room": "N013",
+            "title": "Vortrag: Ausgezeichnet studieren am Institut für Physik -",
+            "description": "die Studiengänge Physik, Computational Science ,Wirtschaftsphysik sowie Sensorik und kognitive Psychologie"
+          },
+          {
+            "id": 5,
+            "time": "11:00",
+            "duration": 1,
+            "room": "Treff: Infostand Physik",
+            "title": "L A B O R – hautnah",
+            "description": "Führung durch Labore und Reinräume:<br>Analytik an Festkörperoberflächen"
+          },
+          {
+            "id": 6,
+            "time": "13:00",
+            "duration": 1,
+            "room": "N013",
+            "title": "Vortrag: Ausgezeichnet studieren am Institut für Physik -",
+            "description": "die Studiengänge Physik, Computational Science ,Wirtschaftsphysik sowie Sensorik und kognitive Psychologie"
+          },
+          {
+            "id": 7,
+            "time": "13:00",
+            "duration": 1,
+            "room": "Treff: Infostand Physik",
+            "title": "L A B O R – hautnah",
+            "description": "Führung durch Labore und Reinräume:<br>Halbleiterpysik"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mathematik",
+    "children": [
+      {
+        "id": 8,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N006",
+        "title": "Vortrag: Mathematik studieren in Chemnitz",
+        "description": "Die Fakultät für Mathematik hat neben dem altbewährten kombinierten Bachelor- / Masterstudiengang Mathematik im Wintersemester 2016/17 auch drei neue Bachelorstudiengänge am Start: Finanzmathematik, Wirtschaftsmathematik und MINT: Mathematik, Informatik und Naturwissenschaften mit Anwendungen in der Technik.<br>Es wird über die verschiedenen Vorzüge dieser Studiengänge, die nötigen Voraussetzungen und die sehr guten Berufsaussichten informiert. Wenn Sie Interesse an Mathematik oder auch nur Freude am logischen Denken und Argumentieren haben, sollten Sie diesen Vortrag besuchen. In der folgenden Diskussion sowie an unserem Stand erhalten Sie weitere Informationen über die Studienmöglichkeiten an der Fakultät für Mathematik."
+      },
+      {
+        "id": 9,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N006",
+        "title": "Vortrag: Die Spur des Geldes",
+        "description": "In diesem Vortrag wird das Gebiet der Finanzmathematik an einem einfachen Finanzmarktmodell vorgestellt.<br>Wenn Sie sich nach dem Studium beruflich im Banken- und Versicherungswesen wiederfinden wollen, ist dieser Vortrag ein Muss. In der nachfolgenden Diskussion werden Ihre Fragen zu den Themen Finanzmathematik und Wirtschaftsmathematik beantwortet."
+      }
+    ]
+  },
+  {
+    "title": "Maschinenbau",
+    "children": [
+      {
+        "id": 10,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N105",
+        "title": "Vortrag: Systems Engineering&nbsp; - fundierte Grundlagen für die Projekte von morgen studieren<ul><li>Was ist Systems Engineering und warum ist dieses Studium so interessant?</li><li>Weshalb zeigt die Industrie an Absolventen dieses Studienganges ein besonders Interesse?</li></ul>",
+        "description": ""
+      },
+      {
+        "id": 11,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N002",
+        "title": "Vortrag: Sports Engineering&nbsp; - neue Werkstoffe und Technologien für die menschliche Bewegung",
+        "description": "- Entwicklung und Herstellung von Sportgeräten - von der Mobilitätshilfe bis zum Hochleistungssport"
+      },
+      {
+        "id": 12,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N112",
+        "title": "Vortrag: Studieren an der Fakultät für Maschinenbau<ul><li>Ingenieurstudium an der Universität - Weshalb und welche Möglichkeiten sowie Studienbedingungen erwarten mich in Chemnitz?</li><li>„Und nach dem Studium ...?“ – Wie kann das vielfältige Berufsleben unserer Absolventen aussehen?</li><li>Maschinenbau als moderne Ingenieurwissenschaft</li><li>Automobilproduktion und –technik – rasant, ökologisch und mobil in die Zukunft</li></ul>",
+        "description": ""
+      },
+      {
+        "id": 13,
+        "time": "11:00",
+        "duration": 1,
+        "room": "Treff: Infostand Maschinenbau",
+        "title": "Versuchsfeldführung: Hochleistungstextilien heute<ul><li>Wo werden Hochleistungsextilien eingesetzt?</li><li>Was ist das Besondere bei der Verarbeitung von Glas-, Aramid und Karbonfasern?</li><li>Vorstellung der Stricktechnologie</li><li>Praktische Versuche an der Handflachstrickmaschine</li></ul>",
+        "description": ""
+      },
+      {
+        "id": 14,
+        "time": "11:00 bis 14:00",
+        "duration": 3,
+        "room": "Treff: Infostand Maschinenbau",
+        "title": "Wie aus kleinen Körnchen unterschiedliche Teile entstehen -",
+        "description": "Individuelle Versuchsfeldführung im Technikum Strukturleichtbau"
+      },
+      {
+        "id": 15,
+        "time": "12:00",
+        "duration": 1,
+        "room": "N005",
+        "title": "Vortrag: In die Zukunft investieren&nbsp; - an der TU Chemnitz Mikrotechnik/Mechatronik studieren<ul><li>Was erwartet mich im Studium?</li><li>Welche beruflichen Perspektiven bieten sich mir nach dem erfolgreichen Studium?</li></ul>",
+        "description": ""
+      },
+      {
+        "id": 16,
+        "time": "12:00",
+        "duration": 1,
+        "room": "N002",
+        "title": "Vortrag: Wir lehren und forschen, damit Menschen in Bewegung bleiben<ul><li>Welche Möglichkeiten bieten unser Studiengang Medical Engineering?</li><li>Durch welche Besonderheiten zeichnen sich unsere Studiengänge aus?</li></ul>",
+        "description": ""
+      },
+      {
+        "id": 17,
+        "time": "13:00",
+        "duration": 1,
+        "room": "N005",
+        "title": "Vortrag: Drucken – in Zukunft Elektronik!<ul><li>Ihre Ausbildung im interdisziplinären Umfeld</li><li>Unsere Druckmaschinen für eine neue Industrie</li><li>Ihre Karrieremöglichkeiten</li></ul>",
+        "description": ""
+      },
+      {
+        "id": 18,
+        "time": "13:00",
+        "duration": 1,
+        "room": "Treff: Infostand Maschinenbau",
+        "title": "Versuchsfeldführung: Hochleistungstextilien heute<ul><li>Wo werden Hochleistungsextilien eingesetzt?</li><li>Was ist das Besondere bei der Verarbeitung von Glas-, Aramid und Karbonfasern?</li><li>Vorstellung der Stricktechnologie</li><li>Praktische Versuche an der Handflachstrickmaschine</li></ul>",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Elektrotechnik und Informationstechnik",
+    "children": [
+      {
+        "id": 19,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N113",
+        "title": "Vortrag: Studienangebote und berufliche Perspektiven auf dem Gebiet der Elektrotechnik/ Elektronik und Informationstechnik",
+        "description": "In einem zusammenfassenden Vortrag werden die vielseitigen Tätigkeitsfelder und beruflichen Entwicklungsmöglichkeiten für Studierende der Fakultät für Elektrotechnik und Informationstechnik und das aktuelle zweistufige Studienangebot an Bachelor- und Masterstudiengängen erläutert.<strong> </strong>"
+      },
+      {
+        "id": 20,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N113",
+        "title": "Vortrag: Medizintechnik im klinischen Alltag - Bachelor/Master Biomedizinische Technik",
+        "description": "Die Biomedizinische Technik hat in den letzten Jahrzehnten die diagnostischen und therapeutischen Möglichkeiten der Medizin stark erweitert. Der Vortrag umreißt neben den technischen Entwicklungen auch das mögliche berufliche Umfeld der Absolventen der Biomedizinische Technik (Bachelor/Master) der TU Chemnitz. Das Tätigkeitsfeld dieser Ingenieure ist im klinischen Alltag durch eine enge Zusammenarbeit mit Ärzten und Pflegepersonal gekennzeichnet"
+      },
+      {
+        "id": 21,
+        "time": "12:00",
+        "duration": 1,
+        "room": "Treff: Infostand Elektrotechnik",
+        "title": "Experimente im Hochspannungslabor",
+        "description": "Mit einem Mix aus Vortrag und Experimenten mit “ Kilovolt und Miniblitzen“ zeigt sich hier die Elektrotechnik mal von einer ganz besonderen Seite. Diese „spannungsgeladene“, aber garantiert gefahrlose Vorführung im Labor der Professur für Energie- und Hochspannungstechnik sollte sich niemand entgehen lassen."
+      },
+      {
+        "id": 22,
+        "time": "13:00",
+        "duration": 1,
+        "room": "Treff: Infostand Elektrotechnik",
+        "title": "Elektrotechnik im Kleinstformat - Rundgang durch die Labore der Chemnitzer Mikro- und Nanoelektroniker",
+        "description": "Der informative Laborrundgang führt in das das Zentrum für Mikrotechnologien bzw. Fraunhofer-Institut für Elektronische Nanosysteme. Er vermittelt einen Einblick in die aktuelle Forschung und die praxisorientierten Studienbedingungen. Mikro- und Nanoelektronik ist eine wählbare Spezialisierung im zulassungsfreien Bachelorstudiengang Elektrotechnik sowie Gegenstand weiterführender Masterstudiengänge."
+      }
+    ]
+  },
+  {
+    "title": "Informatik",
+    "children": [
+      {
+        "id": 23,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N012",
+        "title": "Vortrag: Informatikstudium in Chemnitz:",
+        "description": "Bachelor/Master Informatik sowie Angewandte Informatik, Bachelor Informatik und Kommunikationswissenschaften, Master Automotive Software Engineering, Web Engineering, Informatik für Geistes- und Sozialwissenschaften"
+      },
+      {
+        "id": 24,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N012",
+        "title": "Praxisvortrag: Virtual Reality-Systeme für mehrere Benutzer",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Wirtschaftswissenschaften",
+    "children": [
+      {
+        "id": 25,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N114",
+        "title": "Vortrag: Studiengang Wirtschaftswissenschaften",
+        "description": ""
+      },
+      {
+        "id": 26,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N101",
+        "title": "Vortrag: Masterstudiengang Berufs- und Wirtschaftspädagogik",
+        "description": ""
+      },
+      {
+        "id": 27,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N112",
+        "title": "Vortrag: Studiengang Wirtschaftsinformatik",
+        "description": ""
+      },
+      {
+        "id": 28,
+        "time": "10:30",
+        "duration": 1,
+        "room": "N112",
+        "title": "Vortrag: Masterstudiengänge Business Intelligence &amp; Analytics",
+        "description": ""
+      },
+      {
+        "id": 29,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N114",
+        "title": "Vortrag: Das Masterprogramm an der Fakultät für Wirtschaftswissenschaften insgesamt, insbesondere die Studiengänge Management and Organisation Studies, Rechnungslegung und Unternehmenssteuerung, Finance, Economics sowie Wirtschaftswissenschaften für Juristen",
+        "description": ""
+      },
+      {
+        "id": 30,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N101",
+        "title": "Vortrag: Die Weiterbildungsstudiengänge in Kooperation mit der Sächsischen Verwaltungs- und Wirtschaftsakademie: Management sowie Public Sector Management, Informationen zu geplanten Masterstudiengängen",
+        "description": ""
+      },
+      {
+        "id": 31,
+        "time": "12:00",
+        "duration": 1,
+        "room": "N012",
+        "title": "Vortrag: Studiengänge Wirtschaftsingenieurwesen",
+        "description": ""
+      },
+      {
+        "id": 32,
+        "time": "13:00",
+        "duration": 1,
+        "room": "N111",
+        "title": "Vortrag: Masterstudiengänge Value Chain Management und Kundenbeziehungsmanagement",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Philosophische Fakultät",
+    "children": [
+      {
+        "title": "Anglistik/Amerikanistik",
+        "children": [
+          {
+            "id": 33,
+            "time": "10:00",
+            "duration": 1,
+            "room": "N102",
+            "title": "Vortrag: Exotic Research Projects in English and American Studies",
+            "description": "Mitarbeiter und Mitarbeiterinnen des Instituts für Anglistik/Amerikanistik präsentieren ihre besonderen Forschungsprojekte und Arbeitsschwerpunkte und zeigen dadurch die Bandbreite der Studienrichtung auf."
+          },
+          {
+            "id": 34,
+            "time": "10:45",
+            "duration": 1,
+            "room": "N102",
+            "title": "Special: Poetry Slam",
+            "description": "Studierende der Anglistik/Amerikanistik stellen ihre selbstverfassten Gedichte, die während des Studiums entstanden sind, in einer lockeren Atmosphäre vor und geben Einblicke in das Studentenleben, in die Eigenheiten der Stadt Chemnitz und ihre Studienerfahrungen."
+          }
+        ]
+      },
+      {
+        "title": "Europäische Geschichte",
+        "children": [
+          {
+            "id": 35,
+            "time": "12:00",
+            "duration": 1,
+            "room": "N006",
+            "title": "Vortrag: Europäische Geschichte studieren an der TU Chemnitz",
+            "description": ""
+          },
+          {
+            "id": 36,
+            "time": "12:30",
+            "duration": 1,
+            "room": "N006",
+            "title": "Special: Mittelalter im Film",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Europäische Studien",
+        "children": [
+          {
+            "id": 37,
+            "time": "11:00",
+            "duration": 1,
+            "room": "N105",
+            "title": "Vortrag: Europa in Chemnitz studieren",
+            "description": "Europa-Studien, Europawissenschaften, European Studies – die Studienangebote im Themenfeld Europa sind vielfältig und erfreuen sich seit mehr als zehn Jahren regen Zulaufs. Doch was verbirgt sich hinter diesem Label genau und was zeichnet die Europa-Studien in Chemnitz aus?"
+          }
+        ]
+      },
+      {
+        "title": "Germanistik und Kommunikation",
+        "children": [
+          {
+            "id": 38,
+            "time": "10:00",
+            "duration": 1,
+            "room": "N005",
+            "title": "Vortrag: „Die Gegenwart der Vergangenheit“ – Vorstellung des Masterstudienganges „Rezeptionskulturen der Vormoderne",
+            "description": ""
+          },
+          {
+            "id": 39,
+            "time": "11:00",
+            "duration": 1,
+            "room": "N005",
+            "title": "Vortrag: Germanistikstudium - Aufbau, Inhalt, Perspektiven",
+            "description": ""
+          },
+          {
+            "id": 40,
+            "time": "11:00",
+            "duration": 1,
+            "room": "N002",
+            "title": "Special: Interkulturelle Kommunikation praktisch angewendet",
+            "description": "Kulturcampus, eine von Studierenden der Interkulturellen Kommunikation gegründete Initiative, zeigt allen Interessierten anhand von interaktiven Übungen wie Inhalte des Bachelorstudiengangs \"Interkulturelle Kommunikation\" und des Masterstudiengangs \"Interkulturelle Kommunikation – Interkulturelle Kompetenz\" praktisch angewendet werden können."
+          },
+          {
+            "id": 41,
+            "time": "12:00",
+            "duration": 1,
+            "room": "N001",
+            "title": "\"Deutschkurse für Flüchtlinge\"",
+            "description": "Die Professur Deutsch als Fremd- und Zweitsprache zeigt Studieninteressierten, wie unter anderem im Germanistik-Studium Kompetenzen vermittelt werden, um einen späteren Einsatz im Rahmen der Sprachausbildung von Flüchtlingen vorzubereiten."
+          }
+        ]
+      },
+      {
+        "title": "Medienforschung",
+        "children": [
+          {
+            "id": 42,
+            "time": "11:00",
+            "duration": 1,
+            "room": "N111",
+            "title": "Vortrag: Medienkommunikation, Digitale Medien- und Kommunikationskulturen sowie Medien- und Instruktionspsychologie an der TU Chemnitz – Aufbau, Berufsfelder, Kompetenzen und Weiterqualifikation",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Pädagogik",
+        "children": [
+          {
+            "id": 43,
+            "time": "10:00",
+            "duration": 1,
+            "room": "N106",
+            "title": "Pädagogischer Aktionsraum –",
+            "description": "interessierte Gäste mit und ohne pädagogische Ambitionen haben die Möglichkeit, an ausgewählten Methoden, Übungen und Spielen das Wirken und Werden pädagogischer Intentionen mitzuerleben oder die eigene pädagogische Begabung bzw. Veranlagung in kleineren Versuchsanordnungen zu testen."
+          },
+          {
+            "id": 44,
+            "time": "11:00",
+            "duration": 1,
+            "room": "N010",
+            "title": "Vortrag: Zur Bedeutung des Pädagogischen in der modernen Gesellschaft – Eine Einführung in den Bachelorstudiengang Pädagogik",
+            "description": "Darstellung der curricularen, strukturellen und organisatorischen Rahmenbedingungen des Bachelorstudienganges sowie Informationen zu möglichen Tätigkeits- und Einsatzfeldern."
+          },
+          {
+            "id": 45,
+            "time": "12:00",
+            "duration": 1,
+            "room": "N010",
+            "title": "Vortrag: Der Master Pädagogik mit dem Schwerpunkt Lernkulturen – Qualifikationsziele, Ausbildungsinhalte und berufliche Perspektiven",
+            "description": "Darstellung der curricularen, strukturellen und organisatorischen Rahmenbedingungen des Masterstudienganges sowie Informationen zu möglichen Tätigkeits- und Einsatzfeldern. Außerdem Hinweise zu Möglichkeiten des reibungslosen Übergangs für Absolventen des Bachelor Pädagogik an der TU Chemnitz."
+          },
+          {
+            "id": 46,
+            "time": "13:00",
+            "duration": 1,
+            "room": "N106",
+            "title": "Pädagogischer Aktionsraum –",
+            "description": "interessierte Gäste mit und ohne pädagogische Ambitionen haben die Möglichkeit, an ausgewählten Methoden, Übungen und Spielen das Wirken und Werden pädagogischer Intentionen mitzuerleben oder die eigene pädagogische Begabung bzw. Veranlagung in kleineren Versuchsanordnungen zu testen."
+          }
+        ]
+      },
+      {
+        "title": "Politikwissenschaft",
+        "children": [
+          {
+            "id": 47,
+            "time": "12:00",
+            "duration": 1,
+            "room": "N101",
+            "title": "Vortrag: Politikwissenschaft – Studium und Beruf",
+            "description": "Sie suchen nach einem Studienfach, das Ihnen eine spannende Mischung aus gesellschaftspolitischer Forschung und Praxis bietet, das Ihre Analyse- und Urteilkraft ebenso schult wie Ihre Kreativität? Dann lassen Sie sich von unserem Studienangebot überraschen und vom Studium der Politikwissenschaft in Chemnitz überzeugen. Wie unsere Absolventen zeigen, lehren wir keine „brotlose Kunst“, sondern eine moderne Gesellschaftswissenschaft, die sehr gut für weitere Studien wie für interessante Jobs qualifiziert."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Human- und Sozialwissenschaften",
+    "children": [
+      {
+        "id": 48,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N010",
+        "title": "Vortrag. Human- und Sozialwissenschaften - Die Fakultät stellt sich vor",
+        "description": ""
+      },
+      {
+        "id": 49,
+        "time": "10:00",
+        "duration": 1,
+        "room": "N111",
+        "title": "Vortrag: Vorstellung der Studiengänge am Institut für Angewandte Bewegungswissenschaften",
+        "description": ""
+      },
+      {
+        "id": 50,
+        "time": "11:00",
+        "duration": 1,
+        "room": "N001",
+        "title": "Vortrag: Soziologie",
+        "description": "Was ist Soziologie? - Berufsfelder - Soziologie in Chemnitz"
+      },
+      {
+        "id": 51,
+        "time": "12:00",
+        "duration": 1,
+        "room": "N111",
+        "title": "Vortrag: Psychologie",
+        "description": "Vorstellung des Bachelor- und Masterstudienganges, Informationen zum Zulassungsverfahren"
+      }
+    ]
+  },
+  {
+    "title": "Zentrum für Lehrerbildung",
+    "children": [
+      {
+        "id": 52,
+        "time": "12:00",
+        "duration": 1,
+        "room": "N113",
+        "title": "Vortrag: Lehramt an Grundschulen",
+        "description": "Allgemeine Informationen, Inhalte, Fächer, Aufbau"
+      }
+    ]
+  },
+  {
+    "title": "Internationales Universitätszentrum",
+    "children": [
+      {
+        "id": 53,
+        "time": "13:00",
+        "duration": 1,
+        "room": "N002",
+        "title": "Vortrag: Das Ausland ruft!",
+        "description": "Informationen zu Fördermöglichkeiten für ein Auslandsstudium und –praktikum sowie Stipendien und Partnerhochschulen im Rahmen eines Studiums an der TU Chemnitz"
+      }
+    ]
+  },
+  {
+    "title": "Universitätsbibliothek",
+    "children": [
+      {
+        "id": 54,
+        "time": "09:00 bis 14.00",
+        "duration": 5,
+        "room": "Infostand Universitätsbibliothek",
+        "title": "<p>Universitätsbibliothek einmal anders – quizzen, spielen und e-Learning fürs Studium -",
+        "description": "Vor Ort kann man bei uns e-Learning, den Bibliothekskatalog und sein eigenes Wissen fürs Studium testen. Auf spielerische Art und Weise kann jeder Standbesucher erfahren, wie die Angebote der Bibliothek das Studieren erleichtern.</p>"
+      },
+      {
+        "id": 55,
+        "time": "13:00",
+        "duration": 1,
+        "room": "Treff: Infostand Universitätsbibliothek",
+        "title": "<p>Führung durch die CampusBibliothek der Wahl:</p><p>Rundgang durch die Bibliotheksstandorte am Campus mit interessanten Einblicken in unsere digitalen Angebote.</p>- Welche Angebote der Universitätsbibliothek erleichtern das Studium?",
+        "description": "- Wie sucht man in der Bibliothek nach e-Books und anderen Lernmaterialien?<br>- An wen kann man sich wenden, wenn eine Prüfung oder eine Studienarbeit naht?"
+      }
+    ]
+  },
+  {
+    "title": "TU4U - Qualitätspakt Lehre",
+    "children": [
+      {
+        "id": 56,
+        "time": "12:00",
+        "duration": 1,
+        "room": "N102",
+        "title": "Orientierungsworkshop: Ideenfindung zur Studienwahl",
+        "description": "Unentschlossen? Planlos? Oder schon was Konkretes im Blick?<br>Egal, wie deine derzeitige Situation hinsichtlich der Planung deines weiteren Lebensweges nach dem Abitur aussieht, wir besprechen deine Fragen und Anliegen. Außerdem lernst du verschiedene Möglichkeiten kennen, den für dich passenden Studiengang zu finden. Und abschließend erhältst du noch einen kleinen Einblick in das Leben eines Studenten."
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+.selected-events-wrapper {
+	position: relative;
+	background: #f6f6f6;
+	border-radius: 4px;
+	padding: 5px;
+}
+.timetable,
+.dayplan-events {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.selected-events {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 15px;
+}
+
+.timetable .time-slot {
+	padding: 5px;
+}
+
+.selected-events .event-col {
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.selected-events .event-col .event {
+	width: 100%;
+}
+
+.selected-events .event {
+	position: absolute;
+	left: 0;
+}
+
+.selected-events .event .panel {
+	height: 100%;
+	overflow: hidden;
+}
+
+.dayplan {
+	position: fixed;
+	top: 109px;
+	right: 0;
+	background: white;
+	transition: width 500ms;
+}
+
+.toggle-dayplan {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.panel-title a .glyphicon-chevron-down {
+	display: inline-block;
+}
+.panel-title a .glyphicon-chevron-right {
+	display: none;
+}
+
+.panel-title a.collapsed .glyphicon-chevron-down {
+	display: none;
+}
+.panel-title a.collapsed .glyphicon-chevron-right {
+	display: inline-block;
+}
+
+.time-slot {
+	height: 100px;
+}

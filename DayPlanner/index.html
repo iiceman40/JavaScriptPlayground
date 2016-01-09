@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dayPlannerApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>TU-Chemnitz - Tag der offenen Tür</title>
+	<link rel="stylesheet" href="../Libs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="../Libs/js/jquery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../Libs/js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../Libs/js/angular/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+<div class="container-fluid" ng-controller="EventsController">
+	<h1 class="page-header">Tag der offenen Tür</h1>
+
+	<div class="row">
+
+		<div class="col-sm-8">
+			<h2>Alle Veranstaltungen</h2>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default" ng-repeat="event in events">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a role="button" class="collapsed" data-toggle="collapse" data-target="#collapse-{{$index}}">
+								<span class="glyphicon glyphicon-chevron-down"></span>
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								{{event.title}}
+							</a>
+						</h4>
+					</div>
+					<div id="collapse-{{$index}}" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div ng-repeat="event in event.children">
+								<div ng-if="event.children">
+									<h4>{{event.title}}</h4>
+									<div ng-repeat="event in event.children" ng-include="'templates/eventInfo.html'"></div>
+								</div>
+							</div>
+							<div ng-repeat="event in event.children" ng-include="'templates/eventInfo.html'"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-{{dayPlan.size}} dayplan">
+			<h2>
+				Mein Tagesplan
+				<a href="" class="small pull-right toggle-dayplan" ng-click="toggleDayPlanSize()">
+					<span ng-if="dayPlan.size != 12">größer</span>
+					<span ng-if="dayPlan.size == 12">kleiner</span>
+				</a>
+			</h2>
+			<div class="selected-events-wrapper" ng-style="{height: timeToFloat(dayPlan.end) - timeToFloat(dayPlan.start) + 100 + 'px'}">
+				<div class="container-fluid timetable">
+					<div class="row" ng-repeat="time in getTimetable()" ng-style="{background: $odd ? '#EFEFEF' : ''}">
+						<div class="col-xs-1">
+							<div class="text-right time-slot">{{time}}</div>
+						</div>
+						<div class="col-xs-11">
+							&nbsp;
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid dayplan-events">
+					<div class="row">
+						<div class="col-xs-11 col-xs-offset-1">
+							<div class="selected-events clearfix">
+								<div class="event-col" ng-style="{width: colWidth() + '%'}" ng-repeat="col in selectedEventsColumns">
+									<div ng-repeat="event in col">
+										<div class="event" ng-style="{height: event.duration * 100 + 'px', top: timeToFloat(event.time)}">
+											<div class="panel panel-default">
+												<div class="panel-body">
+													<div>
+														<button class="btn btn-link pull-right" ng-click="toggleEventSelection(event)">
+															<span class="glyphicon glyphicon-remove" title="aus Tagesplan entfernen"></span>
+														</button>
+													</div>
+													{{event.room}}
+													<div ng-bind-html="event.title | sanitize"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="data">
+	<!-- insert <div id="accordion">...</div> here for new import -->
+</div>
+
+</body>
+
+</html>
