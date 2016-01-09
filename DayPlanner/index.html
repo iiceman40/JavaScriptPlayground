@@ -18,7 +18,7 @@
 
 	<div class="row">
 
-		<div class="col-sm-8">
+		<div class="col-sm-8" ng-show="dayPlan.size != 12">
 			<h2>Alle Veranstaltungen</h2>
 			<div class="panel-group" id="accordion">
 				<div class="panel panel-default" ng-repeat="event in events">
@@ -79,8 +79,8 @@
 															<span class="glyphicon glyphicon-remove" title="aus Tagesplan entfernen"></span>
 														</button>
 													</div>
-													{{event.room}}
 													<div ng-bind-html="event.title | sanitize"></div>
+													{{event.room}}
 												</div>
 											</div>
 										</div>
