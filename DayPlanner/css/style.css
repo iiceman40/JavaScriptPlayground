@@ -23,7 +23,9 @@
 }
 
 .timetable .time-slot {
-	padding: 5px;
+	padding: 15px 0;
+	height: 100px;
+	font-size: 12px;
 }
 
 .selected-events .event-col {
@@ -76,8 +78,4 @@
 }
 .panel-title a.collapsed .glyphicon-chevron-right {
 	display: inline-block;
-}
-
-.time-slot {
-	height: 100px;
 }

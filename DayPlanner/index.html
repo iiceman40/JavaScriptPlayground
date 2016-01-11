@@ -55,19 +55,21 @@
 				</a>
 			</h2>
 			<div class="selected-events-wrapper" ng-style="{height: timeToFloat(dayPlan.end) - timeToFloat(dayPlan.start) + 100 + 'px'}">
+
 				<div class="container-fluid timetable">
 					<div class="row" ng-repeat="time in getTimetable()" ng-style="{background: $odd ? '#EFEFEF' : ''}">
-						<div class="col-xs-1">
+						<div class="col-xs-2">
 							<div class="text-right time-slot">{{time}}</div>
 						</div>
-						<div class="col-xs-11">
+						<div class="col-xs-10">
 							&nbsp;
 						</div>
 					</div>
 				</div>
+
 				<div class="container-fluid dayplan-events">
 					<div class="row">
-						<div class="col-xs-11 col-xs-offset-1">
+						<div class="col-xs-10 col-xs-offset-2">
 							<div class="selected-events clearfix">
 								<div class="event-col" ng-style="{width: colWidth() + '%'}" ng-repeat="col in selectedEventsColumns">
 									<div ng-repeat="event in col">
@@ -90,6 +92,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
